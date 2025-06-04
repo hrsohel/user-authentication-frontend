@@ -38,7 +38,7 @@ export default function ShopPage() {
             console.log(error)
         }
     }, [])
-    if(Object.keys(data).length > 0 && !data?.success && !loading) {
+    if(Object.keys(data?.data).length > 0 && !data?.success && !loading) {
         return <>
             <div style={{padding: "5px 10px"}} className="flex items-center justify-between bg-blue-800 text-white text-xl">
                 <div>Logo</div>
