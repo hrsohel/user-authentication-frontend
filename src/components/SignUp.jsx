@@ -42,7 +42,7 @@ export default function Login() {
             setErrors({...invalidInput, usernameError: invalidInput.username, passwordError: invalidInput.password})
             return;
         }
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/v1/add-user`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/add-user`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
