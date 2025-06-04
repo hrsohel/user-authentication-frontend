@@ -32,7 +32,7 @@ function Navbar({userData}) {
                                         <p className='font-semibold underline'>Shops</p>
                                         {
                                             userData && userData?.data?.shops.map((value, index) => {
-                                                return <Link target='_blank' style={{marginLeft: "3px"}} className='block' key={index} to={`http://${value.split(" ").join("-")}.localhost:5173`}>{value}</Link>
+                                                return <Link target='_blank' style={{marginLeft: "3px"}} className='block' key={index} to={`http://${value.split(" ").join("-")}.${import.meta.env.HOSTNAME}`}>{value}</Link>
                                             })
                                         }
                                     </div>
