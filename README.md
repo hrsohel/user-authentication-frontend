@@ -10,7 +10,8 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application with secure use
 ---
 
 ## 🔗 Run the project
-- After clone the project, go to the main folder and the run `npm run dev`
+- After clone the project, go to the main folder and then run `npm run dev`
 - For subdomain authentication, you must run react app on localhost. From vercel link, subdomain link will redirect to the localhost.
 
 - .env file are inluded on the main project. You don't have to setup anything maually.
+- Backend api are being hit from the vercel live url. No need to run backend in localhost.
