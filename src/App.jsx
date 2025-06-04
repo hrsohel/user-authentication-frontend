@@ -8,10 +8,10 @@ import SignUp from './components/SignUp'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
-  let subDomain
-  const hostname = window.location.hostname;
-  const parts = hostname.split('.');
-  subDomain =  parts[0];
+  // let subDomain
+  // const hostname = window.location.hostname;
+  // const parts = hostname.split('.');
+  // subDomain =  parts[0];
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +19,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<ShopPage subDomain={subDomain} />} />
+        <Route path="*" element={<ShopPage />} />
       </Routes>
     </BrowserRouter>
   );
