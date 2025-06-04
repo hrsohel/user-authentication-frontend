@@ -16,7 +16,7 @@ export default function Login() {
     setPassword(password);
     if(checkData === "on") setCheck(true)
     else setCheck(false)
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/v1/login-user`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/login-user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
