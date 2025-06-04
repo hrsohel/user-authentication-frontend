@@ -52,7 +52,7 @@ export default function ShopPage() {
   return (
     <>
         {
-            subDomain !== "localhost" ? <div className="text-xl font-bold">
+            subDomain !== "localhost" && subDomain !== "user-authentication-frontend-hazel" ? <div className="text-xl font-bold">
             <div style={{padding: "5px 10px"}} className="flex items-center justify-between bg-blue-800 text-white text-xl">
                 <div>Logo</div>
                 <p>{data?.data?.username}</p>
