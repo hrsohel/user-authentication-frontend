@@ -11,6 +11,7 @@ export default function Profile() {
     const navigate = useNavigate()
     useLayoutEffect(() => {
         const storage = JSON.parse(localStorage.getItem("user-token"))
+        console.log(storage)
         setToken(storage?.token)
         if(!storage) navigate("/login")
     }, [])

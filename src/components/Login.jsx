@@ -30,7 +30,8 @@ export default function Login() {
   const [state, formAction, pending] = useActionState(handleSubmit, null);
   if (state?.success) {
     setTimeout(() => {
-        localStorage.setItem("user-token", JSON.stringify({token: state?.token}))
+        localStorage.setItem("user-token", JSON.stringify({token: state?.token, crypted: state?.crypted}))
+        localStorage.setItem("state", JSON.stringify({state}))
       navigate("/profile");
     }, 2000);
   }

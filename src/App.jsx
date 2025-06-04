@@ -8,10 +8,6 @@ import SignUp from './components/SignUp'
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
-  // let subDomain
-  // const hostname = window.location.hostname;
-  // const parts = hostname.split('.');
-  // subDomain =  parts[0];
   return (
     <BrowserRouter>
       <Routes>
