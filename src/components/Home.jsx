@@ -44,8 +44,9 @@ export default function ShopPage() {
                 <div>Logo</div>
                 <p>{data?.data?.username}</p>
             </div>
-            <div className="flex items-center justify-center h-screen">
+            <div className="flex items-center justify-center h-screen flex-col">
                 <p className="text-xl">You are unauthorized for this page!</p>
+                <Link to="https://user-authentication-frontend-hazel.vercel.app/login" className="underline">Please login here.</Link>
             </div>;
         </>
     }

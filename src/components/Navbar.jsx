@@ -29,13 +29,17 @@ function Navbar({userData}) {
   return (
     <>
         <div style={{padding: "10px"}} className='flex text-white items-center justify-between bg-blue-800'>
-            <div className='text-xl font-semibold'>Logo</div>
+            <div className='text-xl font-semibold'>
+                <Link to="/">Logo</Link>
+            </div>
             <ul className='flex items-center justify-center gap-4'>
                 {
                     token || userData?.data ? <>
                         <li className='relative'>
                             {/* <Link to="/profile">Profile</Link> */}
-                            <p onClick={() => setShow(!show)}>Profile</p>
+                            <p onClick={() => setShow(!show)}>
+                                <img src="/user.png" alt="user pic" loading='lazy' className='w-[2rem] h-[2rem] object-cover' />
+                            </p>
                             {
                                 show ? <div style={{marginTop: "5px", padding: "5px"}} className='bg-slate-400 rounded-md absolute right-0 top-6 min-w-[10rem]'>
                                     <div>
