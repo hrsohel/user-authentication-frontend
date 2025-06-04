@@ -48,6 +48,8 @@ export default function Login() {
           style={{ padding: "16px" }} 
           className="border-2 border-blue-800 rounded-md w-[30rem]"
         >
+
+          <h1 style={{padding: "6px"}} className="text-xl text-center font-semibold">Login</h1>
             <div style={{padding: "3px 5px"}}>
                 {state && !state?.success ? <>
                     <p className="bg-red-300 text-red-700 text-center rounded-sm">{state.message}</p>

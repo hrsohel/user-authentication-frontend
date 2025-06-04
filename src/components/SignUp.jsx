@@ -68,6 +68,7 @@ export default function Login() {
     <Navbar />
         <div className="h-screen flex items-center justify-center">
             <form action={formAction} style={{padding: "16px"}} className="border-2 border-blue-800 rounded-md w-[30rem]">
+                <h1 style={{padding: "6px"}} className="text-xl text-center font-semibold">Sign up</h1>
                 <div style={{padding: "3px 5px"}}>
                     {state?.success ? <>
                         <p className="bg-green-300 text-green-700 rounded-sm">{state.message}</p>
