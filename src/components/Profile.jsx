@@ -41,7 +41,7 @@ export default function Profile() {
     }, [token])
     if(!userData?.success) return <>
         <Navbar />
-        <h1 style={{padding: "10px"}}>You are not authorized for this page!</h1>
+        <h1 style={{padding: "10px"}}>You are not authorized for this page! You may have to login.</h1>
         <Link style={{padding: "10px"}} to="/login" className='underline'>Please login here.</Link>
     </>
   return (
